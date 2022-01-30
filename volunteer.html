@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<title>Volunteer Page</title>
+{%endblock%}
+
+{%block body%}
+<div class="container_seek">
+    <div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <h1 class="nav-link" aria-current="page">This is the page for Volunteer</h1>
+            </li>
+          </ul>
+    </div>
+    <div class="form_seek">
+        <form method="POST" action="/seeker_display">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" class="form-control" name="Name" aria-describedby="emailHelp" placeholder="Enter Name" value={{request.form.Name}}>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Radius</label>
+            <input type="number" class="form-control" name="Radius" placeholder="Enter Radius (Miles)" value={{request.form.password}}>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Phone Number</label>
+            <input type="tel" class="form-control" name="Phone_Number" placeholder="Enter Phone Number" value={{request.form.phone}}>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Current Location</label>
+            <input type="tel" class="form-control" name="currentLocation" placeholder="Enter Your Current Location" value={{request.form.address}}>
+        </div>
+        <br>
+        <button type="submit" class="btn-secondary">Submit</button>
+    </form>
+    </div>
+</div>
+{%endblock%}

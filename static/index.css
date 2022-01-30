@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gluten:wght@100;200;300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gochi+Hand&family=Kreon:wght@300&display=swap');
+body {
+    text-align: center;
+    font-family: 'Kreon', serif;
+}
+
+label{
+    color: yellow;
+}
+
+.button {
+    padding-top: 20%;
+}
+
+.btn {
+    padding: 30px;
+    background-color: lightblue;
+    color: blue;
+}
+
+.btn:hover {
+    font-family: 'Courier New', Courier, monospace;
+    transform: scaleX(1.05);
+    background-color: blue;
+    color: white;
+    transition: transform 0.25s ease-out;
+}
+
+.container_seek {
+    display: grid;
+}
+
+.form_seek{
+    padding-left: 30%;
+    text-align: center;
+    padding-right: 30%;
+    padding-top: 10%;
+}
